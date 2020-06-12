@@ -1,0 +1,13 @@
+timeout: 900s
+steps:
+  - name: node
+    entrypoint: npm
+    args:
+      - run
+      - build
+  - name: node
+    entrypoint: npm
+    args:
+      - publish
+      - --prefix
+      - dist/ng-grid-system

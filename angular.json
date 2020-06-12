@@ -2,5 +2,49 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "ng-grid-system": {
+      "projectType": "library",
+      "root": "projects/ng-grid-system",
+      "sourceRoot": "projects/ng-grid-system/src",
+      "prefix": "gs",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-grid-system/tsconfig.lib.json",
+            "project": "projects/ng-grid-system/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-grid-system/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-grid-system/src/test.ts",
+            "tsConfig": "projects/ng-grid-system/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-grid-system/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-grid-system/tsconfig.lib.json",
+              "projects/ng-grid-system/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "cli": {
+    "analytics": "f5d51ba3-ed5f-49cf-848b-14b6ffe57f8b"
+  },
+  "defaultProject": "ng-grid-system"
 }
