@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgGridSystemComponent } from './ng-grid-system.component';
+import { RowComponent } from './row.component';
 
-describe('NgGridSystemComponent', () => {
-  let component: NgGridSystemComponent;
-  let fixture: ComponentFixture<NgGridSystemComponent>;
+describe('RowComponent', () => {
+  let component: RowComponent;
+  let fixture: ComponentFixture<RowComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgGridSystemComponent ]
+      declarations: [ RowComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgGridSystemComponent);
+    fixture = TestBed.createComponent(RowComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

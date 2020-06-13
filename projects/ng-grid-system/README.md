@@ -1,11 +1,6 @@
 # NgGridSystem
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.11.
-
-## Code scaffolding
-
-Run `ng generate component component-name --project ng-grid-system` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-grid-system`.
-> Note: Don't forget to add `--project ng-grid-system` or else it will be added to the default project in your `angular.json` file. 
+This library is implementation for 12 column grid for angular.
 
 ## Build
 

@@ -1,12 +1,13 @@
-import { NgModule } from '@angular/core';
-import { NgGridSystemComponent } from './ng-grid-system.component';
-
+import {NgModule} from '@angular/core';
+import {ContainerComponent} from './container/container.component';
+import {RowComponent} from './row/row.component';
+import {ColumnComponent} from './column/column.component';
 
 
 @NgModule({
-  declarations: [NgGridSystemComponent],
-  imports: [
-  ],
-  exports: [NgGridSystemComponent]
+  declarations: [ContainerComponent, RowComponent, ColumnComponent],
+  imports: [],
+  exports: [ContainerComponent, RowComponent, ColumnComponent]
 })
-export class NgGridSystemModule { }
+export class NgGridSystemModule {
+}

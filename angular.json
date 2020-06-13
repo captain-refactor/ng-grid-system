@@ -8,6 +8,11 @@
       "root": "projects/ng-grid-system",
       "sourceRoot": "projects/ng-grid-system/src",
       "prefix": "gs",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -163,7 +168,8 @@
           }
         }
       }
-    }},
+    }
+  },
   "cli": {
     "analytics": "f5d51ba3-ed5f-49cf-848b-14b6ffe57f8b"
   },
